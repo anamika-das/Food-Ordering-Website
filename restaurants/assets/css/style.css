@@ -1,0 +1,187 @@
+/*--------------------------------------------------------------
+# Restaurants Custom CSS
+--------------------------------------------------------------*/
+body {
+  background: #80808045;
+  width: 100%;
+  height: calc(100%);
+}
+
+main#main {
+  width:100%;
+  height: calc(100%);
+  background:white;
+}
+
+/*--------------------------------------------------------------
+# Restaurants Login page
+--------------------------------------------------------------*/
+#login-right {
+  position: absolute;
+  right:0;
+  width:40%;
+  height: calc(100%);
+  background:white;
+  display: flex;
+  align-items: center;
+}
+#login-left {
+  position: absolute;
+  left:0;
+  width:60%;
+  height: calc(100%);
+  background:#00000061;
+  display: flex;
+  align-items: center;
+}
+#login-right .card {
+  margin: auto
+}
+.logo {
+  margin: auto;
+  font-size: 8rem;
+  background: white;
+  border-radius: 50% 50%;
+  height: 29vh;
+  width: 13vw;
+  display: flex;
+  align-items: center;
+}
+.logo img {
+  height: 80%;
+  width: 80%;
+  margin: auto
+}
+
+/*--------------------------------------------------------------
+# Restaurants toast
+--------------------------------------------------------------*/
+.toast {
+  display: none;
+  min-width: 20vw
+}
+.toast.show {
+  display: block;
+  opacity: 1;
+  position: fixed;
+  z-index: 99999999;
+  margin: 20px;
+  right: 0;
+  bottom: 3.5rem;
+}
+
+/*--------------------------------------------------------------
+# Restaurants Sidebar
+--------------------------------------------------------------*/
+nav#sidebar {
+  height: calc(100%);
+  position: fixed;
+  z-index: 99;
+  left: 0;
+  width: 20%;
+}
+#sidebar .collapse a {
+  text-indent: 50px;
+}
+
+/*--------------------------------------------------------------
+# Restaurants JQuery Taxt Editor
+--------------------------------------------------------------*/
+a.jqte_tool_label.unselectable {
+  height: auto !important;
+  min-width: 4rem !important;
+  padding:5px
+}
+
+/*--------------------------------------------------------------
+# Restaurants Table
+--------------------------------------------------------------*/
+td {
+  vertical-align: middle !important;
+}
+td p {
+  margin: unset !important;
+}
+.custom-switch,.custom-control-input,.custom-control-label{
+  cursor:pointer;
+}
+
+/*--------------------------------------------------------------
+# Preloader
+--------------------------------------------------------------*/
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9999;
+  overflow: hidden;
+  background: #fff;
+}
+
+#preloader:before {
+  content: "";
+  position: fixed;
+  top: calc(50% - 30px);
+  left: calc(50% - 30px);
+  border: 6px solid #1977cc;
+  border-top-color: #d1e6f9;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  -webkit-animation: animate-preloader 1s linear infinite;
+  animation: animate-preloader 1s linear infinite;
+}
+#preloader2 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9999;
+  overflow: hidden;
+  background: #ffffff82;
+}
+
+#preloader2:before {
+  content: "";
+  position: fixed;
+  top: calc(50% - 30px);
+  left: calc(50% - 30px);
+  border: 6px solid #1977cc;
+  border-top-color: #d1e6f9;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  -webkit-animation: animate-preloader 1s linear infinite;
+  animation: animate-preloader 1s linear infinite;
+}
+@-webkit-keyframes animate-preloader {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes animate-preloader {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/*--------------------------------------------------------------
+# Top navbar button
+--------------------------------------------------------------*/
+.navbar-nav .dropdown-menu{
+  position: absolute;
+}
+.navbar-nav .dropdown-toggle:focus{
+  outline: none;
+  box-shadow:none;
+}

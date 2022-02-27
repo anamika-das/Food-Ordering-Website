@@ -1,0 +1,103 @@
+/*--------------------------------------------------------------
+# Client Custom CSS
+--------------------------------------------------------------*/
+@media (min-width: 768px) {
+    body {
+        margin-top: -30px;  /* nav top gap remove */
+    }
+}
+
+@media (max-width: 767.98px) {
+    body {
+        margin-top: 190px;
+    }
+}
+
+a {
+    text-decoration: none;  /* hraf underline remove */
+}
+
+/*--------------------------------------------------------------
+# Start product view model
+# Model move right and full height
+--------------------------------------------------------------*/
+.modal .modal-dialog.modal-full-height.modal-md {
+    right: -27vw;
+ } 
+ .modal-dialog.modal-full-height.modal-md .modal-content {
+   height: 100vh;
+ }
+.modal-full-height.modal-md .modal-body {
+    position: relative;
+    flex: 1 1 auto;
+    padding: 1rem;
+    overflow: auto;
+}
+@media only screen and (max-width: 600px) {
+    .modal-dialog {
+    position: absolute;
+    width: 100vw !important;
+    top: 0px;
+    margin: unset;
+    }
+}
+
+/*--------------------------------------------------------------
+# Model open from right side
+--------------------------------------------------------------*/
+.modal-dialog.modal-full-height.modal-md {
+    position: absolute;
+    width: 27vw;
+    top: 0px;
+    margin: unset;
+    right: -27vw  ;
+    -webkit-transition: right 0.4s ease-out !important;
+    -moz-transition: right 0.4s ease-out !important;
+    -o-transition: right 0.4s ease-out !important;
+    transition: right 0.4s ease-out !important;
+}
+.modal.show .modal-dialog.modal-full-height.modal-md { 
+    right: 0  ;
+    -webkit-transition: right 0.4s ease-out !important;
+    -moz-transition: right 0.4s ease-out !important;
+    -o-transition: right 0.4s ease-out !important;
+    transition: right 0.4s ease-out !important;
+}
+.modal.right.fade .modal-dialog {
+    right: -27vw  ;
+    -webkit-transition: opacity 0.3s linear, right 0.3s ease-out;
+    -moz-transition: opacity 0.3s linear, right 0.3s ease-out;
+    -o-transition: opacity 0.3s linear, right 0.3s ease-out;
+    transition: opacity 0.3s linear, right 0.3s ease-out;
+}
+
+/*--------------------------------------------------------------
+# Items description text
+--------------------------------------------------------------*/
+.truncate {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3; 
+    -webkit-box-orient: vertical;
+    font-size: small;
+    color: #000000cf;
+    font-style: italic;
+ }
+
+/*--------------------------------------------------------------
+# Client toast
+--------------------------------------------------------------*/
+ .toast {
+    display: none;
+    min-width: 20vw
+}
+.toast.show {
+    display: block;
+    opacity: 1;
+    position: fixed;
+    z-index: 99999999;
+    margin: 20px;
+    right: 0;
+    bottom: 3.5rem;
+}
